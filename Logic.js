@@ -26,7 +26,7 @@ if (!num_lock){
   current_display += e
   current_equa += e
   sin_lock = false
-  point_lock = true
+  point_lock = false
 }
 }
 
@@ -45,10 +45,10 @@ function add_sin (e) {
 function add_point(e) {
 
   if (!point_lock){
-    current_number += e
-    sin_lock = true
+    current_equa += e
     current_display += "."
     point_lock = true
+    sin_lock = true
   }
 
 }
